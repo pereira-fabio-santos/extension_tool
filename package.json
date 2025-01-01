@@ -1,0 +1,40 @@
+{
+    "name": "extensiontool",
+    "main": "index.js",
+    "publisher": "PereiraFabioSantos",
+    "displayName": "Extension Tool",
+    "description": "Extensão que permite criar um template de extensão para o Visual Studio Code",
+    "version": "1.0.27",
+    "readme": "README.md",
+    "author": {
+        "name": "Fabio Pereira dos Santos"
+    },
+    "categories": [
+        "Other"
+    ],
+    "galleryBanner": {
+        "theme": "dark",
+        "color": "#002c8c"
+    },
+    "keywords": [
+        "extension",
+        "extensão"
+    ],
+    "activationEvents": [
+        "onCommand:extensionTool.newExtension"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "extensionTool.newExtension",
+                "title": "Extension Tool: Criar nova extensão"
+            }
+        ]
+    },
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "dependencies": {
+        "node-fetch": "^3.3.0"
+    }
+}
